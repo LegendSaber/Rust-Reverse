@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="rust逆向之条件判断">Rust逆向之条件判断</h1>
+<p>在Rust中所有条件判断必须使用布尔类型，也就是其他类型无法自动转换为布尔类型。对于if 1 这样的语句，Rust编译器会直接报错。在汇编层面，跳转指令如下图所示：</p>
+<p><img alt="avatar" src="img/1.png"></p>
+<h2 class="atx" id="1if-else条件判断">1.if-else条件判断</h2>
+<p>如下代码，是最常规的条件判断语句。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_ifelse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">100</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token punctuation">{</span>
+        b <span class="token operator">=</span> x<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        b <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对应反汇编如下，这里会判断x是否大于100</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001170</span> test_pro__test_ifelse proc near   
+<span class="token label function">.text:</span><span class="token number">0000000140001170</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001174</span>                 mov     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001179</span>                 add     <span class="token register variable">eax</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span>000000014000117C                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001180</span>                 seto    <span class="token register variable">al</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001183</span>                 test    <span class="token register variable">al</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001185</span>                 jnz     short loc_14000119E <span class="token comment">; 判断100+5是否整型溢出</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001187</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>000000014000118B                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x = 100 + 5</span>
+<span class="token label function">.text:</span>000000014000118F                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">0</span> <span class="token comment">; y=0</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001197</span>                 cmp     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span>000000014000119A                 jg      short loc_1400011C0 <span class="token comment">; x &gt; 100则跳转</span>
+<span class="token label function">.text:</span>000000014000119C                 jmp     short loc_1400011B6</code></pre>
+<p>如果大于100，则将x赋值给y，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011C0 loc_1400011C0:                          <span class="token comment">; CODE XREF: test_pro__test_ifelse+2A↑j</span>
+<span class="token label function">.text:</span>00000001400011C0                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>00000001400011C4                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; y=x</span>
+<span class="token label function">.text:</span>00000001400011C8
+<span class="token label function">.text:</span>00000001400011C8 loc_1400011C8:                          <span class="token comment">; CODE XREF: test_pro__test_ifelse+4E↑j</span>
+<span class="token label function">.text:</span>00000001400011C8                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span>00000001400011CC                 retn
+<span class="token label function">.text:</span>00000001400011CC test_pro__test_ifelse endp</code></pre>
+<p>否则的话，会跳过输出整型溢出错误的逻辑，继续向下执行else块中的代码，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011B6 loc_1400011B6:                          <span class="token comment">; CODE XREF: test_pro__test_ifelse+2C↑j</span>
+<span class="token label function">.text:</span>00000001400011B6                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">100</span> <span class="token comment">; y=100</span>
+<span class="token label function">.text:</span>00000001400011BE                 jmp     short loc_1400011C8</code></pre>
+<p>这里可以看出Rust和C/C++的不同，C/C++会按代码的顺序翻译指令。也就是C/C++在遇到这样的逻辑的时候，会先判断x是否小于等于100。如果不是，则会继续向下执行if条件成立的代码，否则则会进行跳转，去运行else块中的代码。</p>
+<p>对于如下if-else if - else结构的代码来说，生成的反汇编逻辑和上面是一样的，只是多了一个else-if的判断。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_elseif</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">100</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token punctuation">{</span>
+        b <span class="token operator">=</span> x<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> x <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">{</span>
+        b <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        b <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>首先，函数会判断是否大于100：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011A0 test_pro__test_elseif proc near    
+<span class="token label function">.text:</span>00000001400011A0                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span>00000001400011A4                 mov     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span>00000001400011A9                 add     <span class="token register variable">eax</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span>00000001400011AC                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x = 100 + 5</span>
+<span class="token label function">.text:</span>00000001400011B0                 seto    <span class="token register variable">al</span>
+<span class="token label function">.text:</span>00000001400011B3                 test    <span class="token register variable">al</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span>00000001400011B5                 jnz     short loc_1400011CE <span class="token comment">; 判断是否溢出</span>
+<span class="token label function">.text:</span>00000001400011B7                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>00000001400011BB                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; 保存x的值</span>
+<span class="token label function">.text:</span>00000001400011BF                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">0</span> <span class="token comment">; y=0</span>
+<span class="token label function">.text:</span>00000001400011C7                 cmp     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span>00000001400011CA                 jg      short loc_1400011F1 <span class="token comment">; x大于100则跳转</span>
+<span class="token label function">.text:</span>00000001400011CC                 jmp     short loc_1400011E6</code></pre>
+<p>是的话，则将x赋值给y，然后跳转到退出函数的地方:</p>
+<pre><code class="fenced-code-block language-rust"><span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F1 loc_1400011F1<span class="token punctuation">:</span>                          <span class="token punctuation">;</span> <span class="token constant">CODE</span> <span class="token constant">XREF</span><span class="token punctuation">:</span> test_pro__test_elseif<span class="token operator">+</span>2A↑j
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F1                 mov     eax<span class="token punctuation">,</span> <span class="token punctuation">[</span>rsp<span class="token operator">+</span>2Ch<span class="token punctuation">]</span>  <span class="token punctuation">;</span> eax<span class="token operator">=</span>x
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F5                 mov     <span class="token punctuation">[</span>rsp<span class="token operator">+</span>30h<span class="token punctuation">]</span><span class="token punctuation">,</span> eax  <span class="token punctuation">;</span> y<span class="token operator">=</span>x
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F9                 jmp     short loc_14000120D</code></pre>
+<p>不大于100，则继续判断x是否小于100：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">00000001400011E6</span> loc_1400011E6:                          <span class="token comment">; CODE XREF: test_pro__test_elseif+2C↑j</span>
+<span class="token label function">.text:</span><span class="token number">00000001400011E6</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>00000001400011EA                 cmp     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span>00000001400011ED                 jl      short loc_140001205 <span class="token comment">; 小于100则跳转</span>
+<span class="token label function">.text:</span>00000001400011EF                 jmp     short loc_1400011FB122B</code></pre>
+<p>小于100，则将10赋值给y，随后退出函数:</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001205</span> loc_140001205:                          <span class="token comment">; CODE XREF: test_pro__test_elseif+4D↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001205</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">10</span> <span class="token comment">; y=10</span>
+<span class="token label function">.text:</span><span class="token number">000000014000120D</span>
+<span class="token label function">.text:</span><span class="token number">000000014000120D</span> loc_14000120D:                          <span class="token comment">; CODE XREF: test_pro__test_elseif+59↑j</span>
+<span class="token label function">.text:</span><span class="token number">000000014000120D</span>                                         <span class="token comment">; test_pro__test_elseif+63↑j</span>
+<span class="token label function">.text:</span><span class="token number">000000014000120D</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001211</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001211</span> test_pro__test_elseif endp</code></pre>
+<p>如果等于100，则将100赋值给y，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011FB loc_1400011FB:                          <span class="token comment">; CODE XREF: test_pro__test_elseif+4F↑j</span>
+<span class="token label function">.text:</span>00000001400011FB                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">100</span> <span class="token comment">; y=100</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001203</span>                 jmp     short loc_14000120D</code></pre>
+<p>Rust中的if-else语句还有一种如下的用法，类似于C/C++中的三元运算符。经过逆向发现，生成的反汇编和前面if-else结构生成的反汇编是一样的，这里就不在放出来了。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">100</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token keyword">if</span> x <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token punctuation">{</span> x <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token number">100</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 class="atx" id="2andampandamp和oror运算符">2.&amp;&amp;和||运算符</h2>
+<p>&amp;&amp;和||运算符经常在进行条件判断的时候出现，对于如下代码：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">50</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> x <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> x <span class="token operator">&lt;=</span> <span class="token number">100</span> <span class="token punctuation">{</span>
+        y <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        y <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>函数会首先判断x是否大于等于0:</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001170</span> test_pro__test1 proc near       
+<span class="token label function">.text:</span><span class="token number">0000000140001170</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001174</span>                 mov     <span class="token register variable">eax</span>, <span class="token number">50</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001179</span>                 add     <span class="token register variable">eax</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span>000000014000117C                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x=50+5</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001180</span>                 seto    <span class="token register variable">al</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001183</span>                 test    <span class="token register variable">al</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001185</span>                 jnz     short loc_14000119E <span class="token comment">; 判断整型溢出</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001187</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>000000014000118B                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; 保存x</span>
+<span class="token label function">.text:</span>000000014000118F                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">0</span> <span class="token comment">; y=0</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001197</span>                 cmp     <span class="token register variable">eax</span>, <span class="token number">0</span>
+<span class="token label function">.text:</span>000000014000119A                 jge     short loc_1400011C0 <span class="token comment">; x&gt;=0则跳转</span>
+<span class="token label function">.text:</span>000000014000119C                 jmp     short loc_1400011B6</code></pre>
+<p>如果大于等于0则继续判断，是否大于100，如果不大于100，则将y赋值为50，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011C0 loc_1400011C0:                          <span class="token comment">; CODE XREF: test_pro__test1+2A↑j</span>
+<span class="token label function">.text:</span>00000001400011C0                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>00000001400011C4                 cmp     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span>00000001400011C7                 jg      short loc_1400011B6 <span class="token comment">; x&gt;100则跳转</span>
+<span class="token label function">.text:</span>00000001400011C9                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">50</span> <span class="token comment">; y=50</span>
+<span class="token label function">.text:</span>00000001400011D1
+<span class="token label function">.text:</span>00000001400011D1 loc_1400011D1:                          <span class="token comment">; CODE XREF: test_pro__test1+4E↑j</span>
+<span class="token label function">.text:</span>00000001400011D1                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span>00000001400011D5                 retn
+<span class="token label function">.text:</span>00000001400011D5 test_pro__test1 endp</code></pre>
+<p>而如果在判断x&gt;=0的情况下不跳转，则函数会跳过整型溢出检查的代码，来执行下面将y赋值为100的逻辑。或者在判断x&gt;100的时候跳转了，也会将y赋值为100，然后跳转到退出函数的地址继续执行：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011B6 loc_1400011B6:                          <span class="token comment">; CODE XREF: test_pro__test1+2C↑j</span>
+<span class="token label function">.text:</span>00000001400011B6                                         <span class="token comment">; test_pro__test1+57↓j</span>
+<span class="token label function">.text:</span>00000001400011B6                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">100</span> <span class="token comment">; y=100</span>
+<span class="token label function">.text:</span>00000001400011BE                 jmp     short loc_1400011D11D1</code></pre>
+<p>这里总结一下&amp;&amp;运算符在汇编层面的逻辑如下图：</p>
+<p><img alt="avatar" src="img/2.png"></p>
+<p>对于||运算符，代码则如下：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">50</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> x <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> x <span class="token operator">&gt;</span> <span class="token number">100</span> <span class="token punctuation">{</span>
+        y <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        y <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>首先，判断x是否小于0：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">00000001400011E0</span> test_pro__test2 proc near     
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">00000001400011E0</span>                 sub     rsp<span class="token punctuation">,</span> 38h
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">00000001400011E4</span>                 mov     eax<span class="token punctuation">,</span> <span class="token number">50</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">00000001400011E9</span>                 add     eax<span class="token punctuation">,</span> <span class="token number">5</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011EC                 mov     <span class="token punctuation">[</span>rsp<span class="token operator">+</span>2Ch<span class="token punctuation">]</span><span class="token punctuation">,</span> eax  <span class="token punctuation">;</span> x<span class="token operator">=</span><span class="token number">50</span><span class="token operator">+</span><span class="token number">5</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F0                 seto    al
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F3                 test    al<span class="token punctuation">,</span> <span class="token number">1</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F5                 jnz     short loc_14000120E <span class="token punctuation">;</span> 判断整型溢出
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011F7                 mov     eax<span class="token punctuation">,</span> <span class="token punctuation">[</span>rsp<span class="token operator">+</span>2Ch<span class="token punctuation">]</span>  <span class="token punctuation">;</span> eax<span class="token operator">=</span>x
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011FB                 mov     <span class="token punctuation">[</span>rsp<span class="token operator">+</span>34h<span class="token punctuation">]</span><span class="token punctuation">,</span> eax  <span class="token punctuation">;</span> 保存x
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400011FF                 mov     dword ptr <span class="token punctuation">[</span>rsp<span class="token operator">+</span>30h<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span> <span class="token punctuation">;</span> y<span class="token operator">=</span><span class="token number">0</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001207</span>                 cmp     eax<span class="token punctuation">,</span> <span class="token number">0</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000120A                 jl      short loc_14000122F <span class="token punctuation">;</span> x<span class="token operator">&lt;</span><span class="token number">0</span>则跳转
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000120C                 jmp     short loc_140001226</code></pre>
+<p>如果小于0，则将y赋值为100，然后跳转到退出函数的地址：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000122F loc_14000122F<span class="token punctuation">:</span>                          <span class="token punctuation">;</span> <span class="token constant">CODE</span> <span class="token constant">XREF</span><span class="token punctuation">:</span> test_pro__test2<span class="token operator">+</span>2A↑j
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000122F                 mov     dword ptr <span class="token punctuation">[</span>rsp<span class="token operator">+</span>30h<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">;</span> y<span class="token operator">=</span><span class="token number">100</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001237</span>                 jmp     short loc_140001241</code></pre>
+<p>如果x&gt;=0，继续判断x是否&lt;=100，如果x大于100，就会继续向下执行上面将y赋值给100的代码：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001226</span> loc_140001226:                          <span class="token comment">; CODE XREF: test_pro__test2+2C↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001226</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>000000014000122A                 cmp     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span><span class="token number">000000014000122D</span>                 jle     short loc_140001239 <span class="token comment">; x&lt;=100则跳转</span></code></pre>
+<p>否则的话，就会执行y=50的代码，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001239</span> loc_140001239:                          <span class="token comment">; CODE XREF: test_pro__test2+4D↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001239</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">50</span> <span class="token comment">; y=50</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001241</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001241</span> loc_140001241:                          <span class="token comment">; CODE XREF: test_pro__test2+57↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001241</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001245</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001245</span> test_pro__test2 endp</code></pre>
+<p>所以此时的代码逻辑如下图：</p>
+<p><img alt="avatar" src="img/3.png"></p>
+<h2 class="atx" id="3match表达式">3.match表达式</h2>
+<p>Rust中的match表达式，类似于C/C++中的switch-case。下面是一个最基础的用法，match中的_=&gt;{}和c/c++的default关键字一样，用于处理均不匹配各项条件的默认情况。Rust编译器会要求，match表达式一定要匹配所有的情况，如果不能全写出来，就要用=&gt;{}来处理默认情况。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_match</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">match</span> x <span class="token punctuation">{</span>
+        <span class="token number">1</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">2</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">3</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        _ <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">30</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对应反汇编如下，首先判断是否等于1，</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001180</span> test_pro__test_match proc near    
+<span class="token label function">.text:</span><span class="token number">0000000140001180</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001184</span>                 mov     <span class="token register variable">eax</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001189</span>                 inc     <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000118B                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x=1+1</span>
+<span class="token label function">.text:</span>000000014000118F                 seto    <span class="token register variable">al</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001192</span>                 test    <span class="token register variable">al</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001194</span>                 jnz     short loc_1400011C3 <span class="token comment">; 判断整型溢出</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001196</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>000000014000119A                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000119E                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">0</span> <span class="token comment">; y=0</span>
+<span class="token label function">.text:</span>00000001400011A6                 sub     <span class="token register variable">eax</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span>00000001400011A9                 jz      short loc_1400011E5 <span class="token comment">; 为1则跳转</span></code></pre>
+<p>如果x为1，则跳转执行y=1，然后在跳转退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">00000001400011E5</span> loc_1400011E5:                          <span class="token comment">; CODE XREF: test_pro__test_match+29↑j</span>
+<span class="token label function">.text:</span><span class="token number">00000001400011E5</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">1</span> <span class="token comment">; y=1</span>
+<span class="token label function">.text:</span>00000001400011ED                 jmp     short loc_140001201</code></pre>
+<p>如果x不等于1，继续向下判断x是否等于2：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011AD loc_1400011AD:                          <span class="token comment">; CODE XREF: test_pro__test_match+2B↑j</span>
+<span class="token label function">.text:</span>00000001400011AD                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>00000001400011B1                 sub     <span class="token register variable">eax</span>, <span class="token number">2</span>
+<span class="token label function">.text:</span>00000001400011B4                 jz      short loc_1400011EF <span class="token comment">; x=2则跳转</span></code></pre>
+<p>如果x等于2，则将y赋值为2，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011EF loc_1400011EF:                          <span class="token comment">; CODE XREF: test_pro__test_match+34↑j</span>
+<span class="token label function">.text:</span>00000001400011EF                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">2</span> <span class="token comment">; y=2</span>
+<span class="token label function">.text:</span>00000001400011F7                 jmp     short loc_140001201</code></pre>
+<p>x不等于2，就继续判断x是否等于3：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011B8 loc_1400011B8:                          <span class="token comment">; CODE XREF: test_pro__test_match+36↑j</span>
+<span class="token label function">.text:</span>00000001400011B8                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>00000001400011BC                 sub     <span class="token register variable">eax</span>, <span class="token number">3</span>
+<span class="token label function">.text:</span>00000001400011BF                 jz      short loc_1400011F9 <span class="token comment">; x=3则跳转</span>
+<span class="token label function">.text:</span>00000001400011C1                 jmp     short loc_1400011DB</code></pre>
+<p>x等于3，则将y赋值为3，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011F9 loc_1400011F9:                          <span class="token comment">; CODE XREF: test_pro__test_match+3F↑j</span>
+<span class="token label function">.text:</span>00000001400011F9                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">3</span> <span class="token comment">; y=2</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001201</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001201</span> loc_140001201:                          <span class="token comment">; CODE XREF: test_pro__test_match+63↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001201</span>                                         <span class="token comment">; test_pro__test_match+6D↑j ...</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001201</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001205</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001205</span> test_pro__test_match endp</code></pre>
+<p>x不等于3，则跳转到将y赋值为30：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400011DB loc_1400011DB:                          <span class="token comment">; CODE XREF: test_pro__test_match+41↑j</span>
+<span class="token label function">.text:</span>00000001400011DB                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">30</span>
+<span class="token label function">.text:</span><span class="token number">00000001400011E3</span>                 jmp     short loc_140001201</code></pre>
+<p>上面是match表达式需要匹配分支比较少的情况下，而如果是下面这种分支比较多的情况，代码逻辑就会不同：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_match1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">match</span> x <span class="token punctuation">{</span>
+        <span class="token number">1</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">2</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">3</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">4</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">5</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">6</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">7</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">8</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">9</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token number">10</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        _ <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>函数会首先将x-1和9相减，然后用ja这条指令来选择是否判断。如果x大于10，这里会跳转。如果x &lt;= 0，根据那么x-1就变成负数，也就是首位变成1，还是大于9，依然会跳转。所以这里是当x不在1到9中的时候就会跳转：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001210</span> test_pro__test_match1 proc near 
+<span class="token label function">.text:</span><span class="token number">0000000140001210</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001214</span>                 mov     <span class="token register variable">eax</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001219</span>                 inc     <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000121B                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x=1+1</span>
+<span class="token label function">.text:</span>000000014000121F                 seto    <span class="token register variable">al</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001222</span>                 test    <span class="token register variable">al</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001224</span>                 jnz     short loc_140001259 <span class="token comment">; 判断整型</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001226</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>000000014000122A                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000122E                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">0</span> <span class="token comment">; y=0</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001236</span>                 dec     <span class="token register variable">eax</span>             <span class="token comment">; switch 10 cases</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001238</span>                 mov     <span class="token register variable">ecx</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000123A                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>  <span class="token comment">; 保存x-1的值</span>
+<span class="token label function">.text:</span>000000014000123F                 sub     <span class="token register variable">eax</span>, <span class="token number">9</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001242</span>                 ja      short def_140001257 <span class="token comment">; x-1&gt;9，则跳转</span></code></pre>
+<p>如果跳转了，就会执行=&gt;{}中的代码，将y赋值为30，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001271</span> def_140001257:                          <span class="token comment">; CODE XREF: test_pro__test_match1+32↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001271</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">100</span> <span class="token comment">; jumptable 0000000140001257 default case</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001279</span>                 jmp     short loc_1400012DD</code></pre>
+<p>如果没跳转，函数会将x-1作为下标，从jpt_140001257数组中取出值。然后该值和jpt_140001257数组的地址进行相加，作为要执行的目标地址进行jmp。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001249</span>                 lea     <span class="token register variable">rcx</span>, jpt_140001257 <span class="token comment">; rcx等于jpt_140001257的地址</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001250</span>                 movsxd  <span class="token register variable">rax</span>, dword ptr <span class="token operator">[</span><span class="token register variable">rcx</span><span class="token operator">+</span><span class="token register variable">rax</span><span class="token operator">*</span><span class="token number">4</span><span class="token operator">]</span> <span class="token comment">; rax=jpt_140001257[x-1]</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001254</span>                 add     <span class="token register variable">rax</span>, <span class="token register variable">rcx</span>        <span class="token comment">; rax加上jpt_140001257的地址</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001257</span>                 jmp     <span class="token register variable">rax</span></code></pre>
+<p>jpt中保存的则是不同地址和jpt_140001257数组地址的偏移，后面减去的140019400h就是pt_140001257数组地址的地址。根据这个可以知道，其实上面的jmp rax就是根据x-9的值来跳转到下面的loc_14000127B,loc_140001285...这些地址。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.rdata:</span><span class="token number">0000000140019400</span> jpt_140001257   dd offset loc_14000127B <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019400</span>                                         <span class="token comment">; DATA XREF: test_pro__test_match1+39↑o</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019404</span>                 dd offset loc_140001285 <span class="token operator">-</span> <span class="token number">140019400h</span> <span class="token comment">; jump table for switch statement</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019408</span>                 dd offset loc_14000128F <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span>000000014001940C                 dd offset loc_140001299 <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019410</span>                 dd offset loc_1400012A3 <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019414</span>                 dd offset loc_1400012AD <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019418</span>                 dd offset loc_1400012B7 <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span>000000014001941C                 dd offset loc_1400012C1 <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019420</span>                 dd offset loc_1400012CB <span class="token operator">-</span> <span class="token number">140019400h</span>
+<span class="token label function">.rdata:</span><span class="token number">0000000140019424</span>                 dd offset loc_1400012D5 <span class="token operator">-</span> <span class="token number">140019400h</span></code></pre>
+<p>而上面说的那些地址中的代码，就是在match语句匹配到不同的情况下，对y赋予不同值然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>000000014000127B loc_14000127B:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>000000014000127B                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>000000014000127B                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">1</span> <span class="token comment">; jumptable 0000000140001257 case 1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001283</span>                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span><span class="token number">0000000140001285</span> <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001285</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001285</span> loc_140001285:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001285</span>                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001285</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">2</span> <span class="token comment">; jumptable 0000000140001257 case 2</span>
+<span class="token label function">.text:</span><span class="token number">000000014000128D</span>                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span>000000014000128F <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>000000014000128F
+<span class="token label function">.text:</span>000000014000128F loc_14000128F:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>000000014000128F                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>000000014000128F                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">3</span> <span class="token comment">; jumptable 0000000140001257 case 3</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001297</span>                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span><span class="token number">0000000140001299</span> <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001299</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001299</span> loc_140001299:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001299</span>                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001299</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">4</span> <span class="token comment">; jumptable 0000000140001257 case 4</span>
+<span class="token label function">.text:</span>00000001400012A1                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span>00000001400012A3 <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400012A3
+<span class="token label function">.text:</span>00000001400012A3 loc_1400012A3:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>00000001400012A3                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>00000001400012A3                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">5</span> <span class="token comment">; jumptable 0000000140001257 case 5</span>
+<span class="token label function">.text:</span>00000001400012AB                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span>00000001400012AD <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400012AD
+<span class="token label function">.text:</span>00000001400012AD loc_1400012AD:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>00000001400012AD                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>00000001400012AD                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">6</span> <span class="token comment">; jumptable 0000000140001257 case 6</span>
+<span class="token label function">.text:</span>00000001400012B5                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span>00000001400012B7 <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400012B7
+<span class="token label function">.text:</span>00000001400012B7 loc_1400012B7:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>00000001400012B7                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>00000001400012B7                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">7</span> <span class="token comment">; jumptable 0000000140001257 case 7</span>
+<span class="token label function">.text:</span>00000001400012BF                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span>00000001400012C1 <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400012C1
+<span class="token label function">.text:</span>00000001400012C1 loc_1400012C1:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>00000001400012C1                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>00000001400012C1                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">8</span> <span class="token comment">; jumptable 0000000140001257 case 8</span>
+<span class="token label function">.text:</span>00000001400012C9                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span>00000001400012CB <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400012CB
+<span class="token label function">.text:</span>00000001400012CB loc_1400012CB:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>00000001400012CB                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>00000001400012CB                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">9</span> <span class="token comment">; jumptable 0000000140001257 case 9</span>
+<span class="token label function">.text:</span>00000001400012D3                 jmp     short loc_1400012DD
+<span class="token label function">.text:</span>00000001400012D5 <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400012D5
+<span class="token label function">.text:</span>00000001400012D5 loc_1400012D5:                          <span class="token comment">; CODE XREF: test_pro__test_match1+47↑j</span>
+<span class="token label function">.text:</span>00000001400012D5                                         <span class="token comment">; DATA XREF: .rdata:jpt_140001257↓o</span>
+<span class="token label function">.text:</span>00000001400012D5                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">10</span> <span class="token comment">; jumptable 0000000140001257 case 10</span>
+<span class="token label function">.text:</span>00000001400012DD
+<span class="token label function">.text:</span>00000001400012DD loc_1400012DD:                          <span class="token comment">; CODE XREF: test_pro__test_match1+69↑j</span>
+<span class="token label function">.text:</span>00000001400012DD                                         <span class="token comment">; test_pro__test_match1+73↑j ...</span>
+<span class="token label function">.text:</span>00000001400012DD                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">00000001400012E1</span>                 retn
+<span class="token label function">.text:</span><span class="token number">00000001400012E1</span> test_pro__test_match1 endp</code></pre>
+<p>所以对于上面两种情况，match表达式和C/C++中的switch-case表达式逻辑是一样的。如果要匹配的情况比较少，就会在函数前面判断所有条件，如果符合条件就会跳转过去执行。如果要匹配的情况比较多，就会生成一个跳转表，然后根据偏移去计算要执行的代码地址，再跳过去直接执行，降低系统的开销。</p>
+<p>Rust运行用|符号将不同的情况放到一起，比如下面的代码，如果x等于2，15或100都会将y赋值为1，否则为100。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_match2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">match</span> x <span class="token punctuation">{</span>
+        <span class="token number">2</span> <span class="token operator">|</span> <span class="token number">15</span> <span class="token operator">|</span> <span class="token number">100</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        _ <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            y <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对于的反汇编就会在一开始就判断x是否等于2，5，15这三个数中的任意一个，是的话就会跳转到loc_140001355中继续执行：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400012F0 test_pro__test_match2 proc near      
+<span class="token label function">.text:</span>00000001400012F0                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span>00000001400012F4                 mov     <span class="token register variable">eax</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span>00000001400012F9                 inc     <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>00000001400012FB                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x=1+1</span>
+<span class="token label function">.text:</span>00000001400012FF                 seto    <span class="token register variable">al</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001302</span>                 test    <span class="token register variable">al</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001304</span>                 jnz     short loc_140001333 <span class="token comment">; 判断整型溢出</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001306</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>000000014000130A                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000130E                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">0</span> <span class="token comment">; y=0</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001316</span>                 sub     <span class="token register variable">eax</span>, <span class="token number">2</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001319</span>                 jz      short loc_140001355 <span class="token comment">; x=2则跳转</span>
+<span class="token label function">.text:</span>000000014000131B                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>       <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span><span class="token number">000000014000131D</span> <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span><span class="token number">000000014000131D</span>
+<span class="token label function">.text:</span><span class="token number">000000014000131D</span> loc_14000131D:                          <span class="token comment">; CODE XREF: test_pro__test_match2+2B↑j</span>
+<span class="token label function">.text:</span><span class="token number">000000014000131D</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001321</span>                 sub     <span class="token register variable">eax</span>, <span class="token number">0Fh</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001324</span>                 jz      short loc_140001355 <span class="token comment">; x=15则跳转</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001326</span>                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001328</span> <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001328</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001328</span> loc_140001328:                          <span class="token comment">; CODE XREF: test_pro__test_match2+36↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001328</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>000000014000132C                 sub     <span class="token register variable">eax</span>, <span class="token number">100</span>
+<span class="token label function">.text:</span>000000014000132F                 jz      short loc_140001355 <span class="token comment">; x等于100则跳转</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001331</span>                 jmp     short loc_14000134B</code></pre>
+<p>loc_140001355就会将y赋值为1，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001355</span> loc_140001355:                          <span class="token comment">; CODE XREF: test_pro__test_match2+29↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001355</span>                                         <span class="token comment">; test_pro__test_match2+34↑j ...</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001355</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">1</span> <span class="token comment">; y=1</span>
+<span class="token label function">.text:</span><span class="token number">000000014000135D</span>
+<span class="token label function">.text:</span><span class="token number">000000014000135D</span> loc_14000135D:                          <span class="token comment">; CODE XREF: test_pro__test_match2+63↑j</span>
+<span class="token label function">.text:</span><span class="token number">000000014000135D</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001361</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001361</span> test_pro__test_match2 endp</code></pre>
+<p>如果和2，5，15都不想等，则会将y赋值为100，然后退出函数：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>000000014000134B loc_14000134B:                          <span class="token comment">; CODE XREF: test_pro__test_match2+41↑j</span>
+<span class="token label function">.text:</span>000000014000134B                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">100</span> <span class="token comment">; y=100</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001353</span>                 jmp     short loc_14000135D</code></pre>
+<p>Rust允许match表达式有返回值，比如如下代码做的事情就和第一个例子一样。最后生成的反汇编也一样，这里就不放出来了。</p>
+<pre><code class="fenced-code-block language-nasm">fn test_match3() {
+    let x <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token comment">;</span>
+
+    let y <span class="token operator">=</span> match x {
+        <span class="token number">1</span> <span class="token operator">=</span><span class="token operator">&gt;</span> {
+            <span class="token number">1</span>
+        },
+        <span class="token number">2</span> <span class="token operator">=</span><span class="token operator">&gt;</span> {
+            <span class="token number">2</span>
+        },
+        <span class="token number">3</span> <span class="token operator">=</span><span class="token operator">&gt;</span> {
+            <span class="token number">3</span>
+        },
+        _ <span class="token operator">=</span><span class="token operator">&gt;</span> {
+            <span class="token number">30</span>
+        }
+    }<span class="token comment">;</span>
+}</code></pre>
+<p>Rust提供了if let语法来简化match表达式，比如下面代码，当x等于2的时候会为y赋值为2，否则不做任何事情：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_match4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token keyword">let</span> <span class="token number">2</span> <span class="token operator">=</span> x <span class="token punctuation">{</span>
+        y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对应的反汇编也相对简单，判断x是否等于2：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400013F0 test_pro__test_match4 proc near    
+<span class="token label function">.text:</span>00000001400013F0                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span>00000001400013F4                 mov     <span class="token register variable">eax</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span>00000001400013F9                 inc     <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>00000001400013FB                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x=1+1</span>
+<span class="token label function">.text:</span>00000001400013FF                 seto    <span class="token register variable">al</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001402</span>                 test    <span class="token register variable">al</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001404</span>                 jnz     short loc_14000141D <span class="token comment">; 整型溢出判断</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001406</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>  <span class="token comment">; eax=x</span>
+<span class="token label function">.text:</span>000000014000140A                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000140E                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">0</span> <span class="token comment">; y=0</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001416</span>                 cmp     <span class="token register variable">eax</span>, <span class="token number">2</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001419</span>                 jz      short loc_140001435 <span class="token comment">; x=2则跳转</span>
+<span class="token label function">.text:</span>000000014000141B                 jmp     short loc_14000143D</code></pre>
+<p>如果x等于2，就会将y赋值为2，然后退出函数。如果不等于2就会直接跳转到退出函数的代码，其实就是少了=&gt;{}这一部分的代码逻辑。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001435</span> loc_140001435:                          <span class="token comment">; CODE XREF: test_pro__test_match4+29↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001435</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token number">2</span> <span class="token comment">; y=2</span>
+<span class="token label function">.text:</span><span class="token number">000000014000143D</span>
+<span class="token label function">.text:</span><span class="token number">000000014000143D</span> loc_14000143D:                          <span class="token comment">; CODE XREF: test_pro__test_match4+2B↑j</span>
+<span class="token label function">.text:</span><span class="token number">000000014000143D</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001441</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001441</span> test_pro__test_match4 endp</code></pre>
+</article>
+</body>
+</html>

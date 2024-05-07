@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="rust逆向之所有权">Rust逆向之所有权</h1>
+<h2 class="atx" id="1基本介绍">1.基本介绍</h2>
+<p>在写代码的过程中，申请内存资源是必须且经常的事情。对于所申请的内存资源的释放，不同编程语言有不同的处理方式。</p>
+<p>对于C/C++这样的语言，需要开发人员手动释放内存资源。但是，开发人员手动释放内存资源的时候，很容易出现一些错误。以下是C/C++在资源释放方面经常会出现的一些错误，前三个往往是造成程序出现漏洞，而最后一个会造成资源的浪费。</p>
+<pre><code class="fenced-code-block language-c"><span class="token keyword">void</span> <span class="token function">test_function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// use after free</span>
+    <span class="token comment">// 申请内存</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 其他代码</span>
+
+    <span class="token comment">//释放内存</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span>  <span class="token function">free</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 其他代码</span>
+
+    <span class="token comment">// 向内存写入数据</span>
+    <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// double free</span>
+    <span class="token comment">// 申请内存</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>p1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 其他代码</span>
+
+    <span class="token comment">// 释放内存</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>p1 <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span>  <span class="token function">free</span><span class="token punctuation">(</span>p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 其他代码</span>
+
+    <span class="token comment">// 释放已经释放的内存</span>
+    <span class="token function">free</span><span class="token punctuation">(</span>p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// null pointer dereference</span>
+    <span class="token comment">// 申请内存</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>p2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//其他代码</span>
+
+    <span class="token comment">// 释放内存</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>p2 <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">free</span><span class="token punctuation">(</span>p2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        p2 <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 其他代码</span>
+
+    <span class="token comment">// 释放NULL</span>
+    <span class="token function">free</span><span class="token punctuation">(</span>p2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 未释放内存</span>
+    <span class="token comment">// 申请内存</span>
+    <span class="token keyword">int</span> <span class="token operator">*</span>p3 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>p3 <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token operator">*</span>p3 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对于Java这样语言，是通过JVM的自动内存回收功能来实现内存资源的释放。但是，这种方式会降低程序运行时的效率。</p>
+<p>为了解决上面的问题，Rust提出了所有权的概念。所有权是Rust最有特色的一个功能，作为内存安全的语言，它的内存安全就依赖于其所有权功能。该功能可以让Rust在没有垃圾回收机制的前提下，保证程序的内存安全。</p>
+<p>Rust的所有权通过以下三条规则，在编译阶段对Rust代码进行分析。以保证内存资源的正确释放，从而避免内存资源的浪费以及可能带来的安全问题。</p>
+<blockquote>
+<ul>
+<li><p>Rust中的每一个值都有一个对应的变量作为它的所有者</p>
+</li>
+<li><p>在同一时间内，值有且仅有一个所有者</p>
+</li>
+<li><p>当所有者离开自己的作用域时，它持有的值就会被释放掉</p>
+</li>
+</ul>
+</blockquote>
+<p>因为是编译阶段的机制，所以所有权功能对变量的检查不会体现在二进制文件中。</p>
+<h2 class="atx" id="2移动move">2.移动(move)</h2>
+<p>变量移动是实现上面说的所有权功能的三条规则的基础，也是Rust的一个特色。如果一个变量没有实现Copy这个trait。那么在复制的时候，将会移动该变量，导致该变量无效，后续对该变量会导致编译出错。比如下面的代码：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_move</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> z <span class="token operator">=</span> x<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> s <span class="token operator">=</span> <span class="token class-name">String</span><span class="token punctuation">::</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> s1 <span class="token operator">=</span> s<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> s2 <span class="token operator">=</span> s<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>由于i32类型的变量实现了Copy trait，所以在执行let y = x；的时候，变量x的值会被复制到变量y中，后续可以继续使用x。而变量s没有实现Copy trait，所以在执行let s1 = s;的时候，会导致变量s移动到s1中，后续对s的使用会在编译的时候出现以下错误：</p>
+<pre><code class="fenced-code-block language-shell">error<span class="token punctuation">[</span>E0382<span class="token punctuation">]</span>: use of moved value: <span class="token variable"><span class="token variable">`</span>s<span class="token variable">`</span></span>
+  --<span class="token operator">&gt;</span> src<span class="token punctuation">\</span>main.rs:16:14
+   <span class="token operator">|</span>
+<span class="token number">14</span> <span class="token operator">|</span>     <span class="token builtin class-name">let</span> s <span class="token operator">=</span> String::from<span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token operator">|</span>         - move occurs because <span class="token variable"><span class="token variable">`</span>s<span class="token variable">`</span></span> has <span class="token builtin class-name">type</span> <span class="token variable"><span class="token variable">`</span>String<span class="token variable">`</span></span>, <span class="token function">which</span> does not implement the <span class="token variable"><span class="token variable">`</span>Copy<span class="token variable">`</span></span> trait
+<span class="token number">15</span> <span class="token operator">|</span>     <span class="token builtin class-name">let</span> s1 <span class="token operator">=</span> s<span class="token punctuation">;</span>
+   <span class="token operator">|</span>              - value moved here
+<span class="token number">16</span> <span class="token operator">|</span>     <span class="token builtin class-name">let</span> s2 <span class="token operator">=</span> s<span class="token punctuation">;</span>
+   <span class="token operator">|</span>              ^ value used here after move
+   <span class="token operator">|</span></code></pre>
+<p>该错误表明，由于String类型的变量s没有实现Copy trait，从而导致s进行了移动。继续使用移动以后的变量，就导致了上述错误。以下是Rust中，默认实现了Copy trait的变量类型：</p>
+<blockquote>
+<ul>
+<li><p>所有整数类型，比如i32</p>
+</li>
+<li><p>仅拥有两种值(true和false)的布尔类型：bool</p>
+</li>
+<li><p>字符类型: char</p>
+</li>
+<li><p>所有的浮点类型，比如f64</p>
+</li>
+<li><p>所有字段都具有Copy trait的元组</p>
+</li>
+</ul>
+</blockquote>
+<p>以下的代码是一个变量移动的例子，</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_move</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> t <span class="token operator">=</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> t1 <span class="token operator">=</span> t<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> y <span class="token operator">=</span> t1<span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> </code></pre>
+<p>对应的汇编代码如下，从汇编代码可以看出来。在发生变量移动的时候，其实并没有进行变量的赋值，也就是说let t1 = t;这行代码并没有真的执行。从内存的角度看，后面对变量t1的使用，其实是直接使用变量t内存地址中保存的数据。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001920</span> demo__test_move proc near               
+<span class="token label function">.text:</span><span class="token number">0000000140001920</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001920</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">10h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001924</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>, <span class="token number">3</span> <span class="token comment">; 为变量t赋值</span>
+<span class="token label function">.text:</span>000000014000192C                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001934</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">8</span><span class="token operator">]</span>    <span class="token comment">; eax=t1.y</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001938</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; y=t1.y</span>
+<span class="token label function">.text:</span>000000014000193C                 add     <span class="token register variable">rsp</span>, <span class="token number">10h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001940</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001940</span> demo__test_move endp</code></pre>
+<p>对于实现了Clone(克隆) trait，而没有实现Copy trait的变量。想要实现变量的复制，可以像下面的代码一样，调用clone函数来实现。由于现在对于t1的赋值，是通过t.clone()来克隆一个新的变量，所以变量t没有被移动，后续对变量t的使用就没有问题。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token attribute attr-name">#[derive(Clone)]</span>
+    <span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> t <span class="token operator">=</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> t1 <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> y <span class="token operator">=</span> t<span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对于汇编代码如下，这里可以看到。对于实现Clone trait的变量，在调用clone方法的时候，会将变量首地址作为第一个参数，然后调用clone函数。这里的clone函数test_clone__impl$0__clone，是针对结构体Test的函数。也就是说，对变量实现Clone trait的时候，Rust会为这个变量实现一个clone函数。后续将这个函数的返回值，赋值到一块新的内存区域中，来实现变量的克隆。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001950</span> demo__test_clone proc near 
+<span class="token label function">.text:</span><span class="token number">0000000140001950</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001950</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001954</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">24h</span><span class="token operator">]</span>, <span class="token number">3</span> <span class="token comment">; 为变量x赋值</span>
+<span class="token label function">.text:</span>000000014000195C                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001964</span>                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">24h</span><span class="token operator">]</span>  <span class="token comment">; demo::test_clone::Test *</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001969</span>                 call    demo__test_clone__impl<span class="token operator">$</span>0__clone
+<span class="token label function">.text:</span>000000014000196E                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; 使用返回值为变量t1赋值</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001972</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token register variable">edx</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001976</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>  <span class="token comment">; eax=t.y</span>
+<span class="token label function">.text:</span>000000014000197A                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; y=t.y</span>
+<span class="token label function">.text:</span>000000014000197E                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001982</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001982</span> demo__test_clone endp</code></pre>
+<p>而test_clone__impl$0__clone函数也很简单，只是将变量t的值取出，作为返回值：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>0000000140001AD0 <span class="token comment">; demo::test_clone::Test __fastcall demo::test_clone::impl_0::clone(demo::test_clone::Test *)</span>
+<span class="token label function">.text:</span>0000000140001AD0 demo__test_clone__impl<span class="token operator">$</span>0__clone proc near
+<span class="token label function">.text:</span>0000000140001AD0
+<span class="token label function">.text:</span>0000000140001AD0                 sub     <span class="token register variable">rsp</span>, <span class="token number">10h</span>
+<span class="token label function">.text:</span>0000000140001AD4                 mov     <span class="token register variable">rax</span>, <span class="token register variable">rcx</span>        <span class="token comment">; rax=变量t的地址</span>
+<span class="token label function">.text:</span>0000000140001AD7                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token register variable">rax</span>
+<span class="token label function">.text:</span>0000000140001ADC                 mov     <span class="token register variable">ecx</span>, <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">]</span>      <span class="token comment">; ecx=t.x</span>
+<span class="token label function">.text:</span>0000000140001ADE                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>    <span class="token comment">; eax=t.y</span>
+<span class="token label function">.text:</span>0000000140001AE1                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">]</span>, <span class="token register variable">ecx</span>      <span class="token comment">; 保存t.x</span>
+<span class="token label function">.text:</span>0000000140001AE4                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>, <span class="token register variable">eax</span>    <span class="token comment">; 保存t.y</span>
+<span class="token label function">.text:</span>0000000140001AE8                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">]</span>      <span class="token comment">; eax=t.x</span>
+<span class="token label function">.text:</span>0000000140001AEB                 mov     <span class="token register variable">edx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>    <span class="token comment">; edx=t.y</span>
+<span class="token label function">.text:</span>0000000140001AEF                 add     <span class="token register variable">rsp</span>, <span class="token number">10h</span>
+<span class="token label function">.text:</span>0000000140001AF3                 retn
+<span class="token label function">.text:</span>0000000140001AF3 demo__test_clone__impl<span class="token operator">$</span>0__clone endp</code></pre>
+<p>最后看一个对结构体Test实现Copy trait，然后直接赋值的例子：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_copy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token attribute attr-name">#[derive(Clone, Copy)]</span>
+    <span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> t <span class="token operator">=</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> t1 <span class="token operator">=</span> t<span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> x <span class="token operator">=</span> t<span class="token punctuation">.</span>x<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> t1<span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对应如下的反汇编，会发现生成的汇编代码类似于第一个例子：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001920</span> demo__test_copy proc near               
+<span class="token label function">.text:</span><span class="token number">0000000140001920</span>                                 
+<span class="token label function">.text:</span><span class="token number">0000000140001920</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">10h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001924</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">]</span>, <span class="token number">3</span> <span class="token comment">; 为变量t赋值</span>
+<span class="token label function">.text:</span>000000014000192B                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001933</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">]</span>      <span class="token comment">; eax=t.x</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001936</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token register variable">eax</span>    <span class="token comment">; x=t.x</span>
+<span class="token label function">.text:</span>000000014000193A                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>    <span class="token comment">; eax=t1.y</span>
+<span class="token label function">.text:</span>000000014000193E                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; y=t1.y</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001942</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">10h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001946</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001946</span> demo__test_copy endp</code></pre>
+<p>不过这个例子中，变量t和t1都是不可变的。下面的这个例子，变量t和t1都是可变的：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_copy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token attribute attr-name">#[derive(Clone, Copy)]</span>
+    <span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> t <span class="token operator">=</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> t1 <span class="token operator">=</span> t<span class="token punctuation">;</span>
+
+    t1<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> t <span class="token operator">=</span> t<span class="token punctuation">.</span>x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>这个时候就会发现，为t1进行赋值的代码没有被删掉。函数会在一块新的内存区域中，将变量t的数值赋值给变量t1：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001820</span> demo__test_copy proc near           
+<span class="token label function">.text:</span><span class="token number">0000000140001820</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001820</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">18h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001824</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>, <span class="token number">3</span> <span class="token comment">; 初始化t</span>
+<span class="token label function">.text:</span>000000014000182C                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001834</span>                 mov     <span class="token register variable">ecx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>    <span class="token comment">; ecx=t.x</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001838</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">8</span><span class="token operator">]</span>    <span class="token comment">; eax=t.y</span>
+<span class="token label function">.text:</span>000000014000183C                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token register variable">ecx</span>  <span class="token comment">; 初始化t1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001840</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">10h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001844</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token number">10</span> <span class="token comment">; t1.x=10</span>
+<span class="token label function">.text:</span>000000014000184C                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>    <span class="token comment">; eax=t.x</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001850</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">14h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; x=t.x</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001854</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">18h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001858</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001858</span> demo__test_copy endp</code></pre>
+<p>上面的例子中的变量都是在栈中，栈中的变量在函数退出的时候，会因为rsp寄存器的修改自动释放掉。所以，上面的例子，主要是感受所有权三条规则中的前两条。而这些例子可以直观的感受到，所有权机制是在编译阶段发挥作用。对于最终生成的二进制文件，是感受不到所有权机制的作用的。</p>
+<h2 class="atx" id="3堆">3.堆</h2>
+<p>其实所有权机制对内存安全的保障，更多的是体现在堆内存中。以下是一个申请堆内存的例子：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_heap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对于的反汇编如下，首先，函数会将栈底地址保存到ebp中。然后通过ebp，在栈底保存之后要在堆中存放的值，和-2(这个值不知道是干嘛的)。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001810</span> demo__test_heap proc near               
+<span class="token label function">.text:</span><span class="token number">0000000140001810</span>                 push    <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001811</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">40h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001815</span>                 lea     <span class="token register variable">rbp</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">40h</span><span class="token operator">]</span>  <span class="token comment">; 获取栈底地址</span>
+<span class="token label function">.text:</span>000000014000181A                 mov     qword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">0FFFFFFFFFFFFFFFEh</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001822</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token number">5</span> <span class="token comment">; 保存堆中保存的数据</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001829</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001829</span> loc_140001829:                          <span class="token comment">; DATA XREF: .rdata:000000014001F140↓o</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001829</span> <span class="token comment">;   try {                               ; unsigned __int64</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001829</span>                 mov     <span class="token register variable">edx</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span>000000014000182E                 mov     <span class="token register variable">rcx</span>, <span class="token register variable">rdx</span>        <span class="token comment">; unsigned __int64</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001831</span>                 call    _ZN5alloc5alloc15exchange_malloc17h48a2c7f25fc263d3E <span class="token comment">; alloc::alloc::exchange_malloc::h48a2c7f25fc263d3</span></code></pre>
+<p>然后将rcx和edx赋值为4，在调用_ZN5alloc5alloc15exchange_malloc17h48a2c7f25fc263d3E函数。根据IDA的注释，可以找到这个函数的源码如下，通过源码可以看出第一个参数就是要申请的堆内存大小，第二个值就是内存对齐大小。所以这里rcx和rdx都赋值为4，就是因为要申请一个i32变量，它的大小和内存对齐大小都是4.</p>
+<pre><code class="fenced-code-block language-rust"><span class="token comment">/// The allocator for unique pointers.</span>
+<span class="token attribute attr-name">#[cfg(all(not(no_global_oom_handling), not(test)))]</span>
+<span class="token attribute attr-name">#[lang = <span class="token string">"exchange_malloc"</span>]</span>
+<span class="token attribute attr-name">#[inline]</span>
+<span class="token keyword">unsafe</span> <span class="token keyword">fn</span> <span class="token function-definition function">exchange_malloc</span><span class="token punctuation">(</span>size<span class="token punctuation">:</span> <span class="token keyword">usize</span><span class="token punctuation">,</span> align<span class="token punctuation">:</span> <span class="token keyword">usize</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token operator">*</span><span class="token keyword">mut</span> <span class="token keyword">u8</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> layout <span class="token operator">=</span> <span class="token keyword">unsafe</span> <span class="token punctuation">{</span> <span class="token class-name">Layout</span><span class="token punctuation">::</span><span class="token function">from_size_align_unchecked</span><span class="token punctuation">(</span>size<span class="token punctuation">,</span> align<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">match</span> <span class="token class-name">Global</span><span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span>layout<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Ok</span><span class="token punctuation">(</span>ptr<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> ptr<span class="token punctuation">.</span><span class="token function">as_mut_ptr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token class-name">Err</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">handle_alloc_error</span><span class="token punctuation">(</span>layout<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>申请完了以后，就会将_ZN5alloc5alloc15exchange_malloc17h48a2c7f25fc263d3E函数返回的堆地址，保存到栈中。然后，将从栈中取出该堆地址，将数值5赋值到该堆地址。最后，将该堆地址赋值给变量x。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001836</span> loc_140001836:                          <span class="token comment">; DATA XREF: .rdata:000000014001F148↓o</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001836</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 将返回的堆地址保存起来</span>
+<span class="token label function">.text:</span>000000014000183A                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>      
+<span class="token label function">.text:</span>000000014000183C <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>000000014000183C
+<span class="token label function">.text:</span>000000014000183C loc_14000183C:                          <span class="token comment">; CODE XREF: demo__test_heap+2A↑j</span>
+<span class="token label function">.text:</span>000000014000183C                 mov     <span class="token register variable">rax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>  
+<span class="token label function">.text:</span><span class="token number">0000000140001840</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">]</span>, <span class="token number">5</span> <span class="token comment">; 为堆地址赋值为5</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001846</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 保存堆地址到变量x</span></code></pre>
+<p>在函数退出之前，会获取变量x的地址。再将这个地址作为第一个参数，调用drop函数来释放申请的堆内存。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>000000014000184A                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>  <span class="token comment">; int **</span>
+<span class="token label function">.text:</span>000000014000184E                 call    _ZN4core3ptr49drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>i32<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17hdd6c2c2dbce9827cE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$i32$GT$$GT$::hdd6c2c2dbce9827c</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001853</span>                 nop
+<span class="token label function">.text:</span><span class="token number">0000000140001854</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">40h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001858</span>                 pop     <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001859</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001859</span> <span class="token comment">; } // starts at 140001810</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001859</span> demo__test_heap endp</code></pre>
+<p>动态调试一下，会发现整个流程和上面分析是一样，没看出有什么特别的，这里就不放出来了。从上面的分析可以知道，堆内存在退出函数，其实准确的说法是离开变量作用域的时候，会调用drop函数来释放堆内存。而栈内存中的数据，在函数退出的时候，会自动释放掉。因此，这也就符合了所有权规则中的第三条规则。</p>
+<p>下面的Rust代码，展示了堆变量的移动。这里将x移动到y以后，就不能继续使用x变量。否则，就会出现上面说的变量已被移动的错误。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_heap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>从反汇编看，对保存在堆中的变量进行移动。会将申请到的堆地址再赋值给一个栈内存中，该栈内存表示的就是变量y。由此看到，堆变量的移动和栈变量的移动的不同。栈变量移动的时候，移动的操作在二进制层面没有体现，而堆变量会将堆地址在赋值给一个新的栈变量。之后释放内存的时候，用的是这个移动之后的变量，也就是这里的变量y来释放。而变量x的地址，不会再被拿去调用drop函数，防止内存被两次释放。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001990</span> demo__test_heap proc near               
+<span class="token label function">.text:</span><span class="token number">0000000140001990</span>                 push    <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001991</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">50h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001995</span>                 lea     <span class="token register variable">rbp</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">50h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>000000014000199A                 mov     qword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">0FFFFFFFFFFFFFFFEh</span>
+<span class="token label function">.text:</span>00000001400019A2                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span>00000001400019A9
+<span class="token label function">.text:</span>00000001400019A9 loc_1400019A9:                                <span class="token comment">; unsigned __int64</span>
+<span class="token label function">.text:</span>00000001400019A9                 mov     <span class="token register variable">edx</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span>00000001400019AE                 mov     <span class="token register variable">rcx</span>, <span class="token register variable">rdx</span>        <span class="token comment">; unsigned __int64</span>
+<span class="token label function">.text:</span>00000001400019B1                 call    _ZN5alloc5alloc15exchange_malloc17h48a2c7f25fc263d3E <span class="token comment">; alloc::alloc::exchange_malloc::h48a2c7f25fc263d3</span>
+<span class="token label function">.text:</span>00000001400019B6 loc_1400019B6:                          <span class="token comment">; DATA XREF: .rdata:000000014001F170↓o</span>
+<span class="token label function">.text:</span>00000001400019B6                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 保存申请的堆内存地址</span>
+<span class="token label function">.text:</span>00000001400019BA                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span>00000001400019BC <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400019BC
+<span class="token label function">.text:</span>00000001400019BC loc_1400019BC:                          <span class="token comment">; CODE XREF: demo__test_heap+2A↑j</span>
+<span class="token label function">.text:</span>00000001400019BC                 mov     <span class="token register variable">rax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>   
+<span class="token label function">.text:</span>00000001400019C0                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">]</span>, <span class="token number">5</span>  
+<span class="token label function">.text:</span>00000001400019C6                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 将堆地址保存到变量x中</span>
+<span class="token label function">.text:</span>00000001400019CA                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>   <span class="token comment">; 将堆地址保存到变量y中</span>
+<span class="token label function">.text:</span>00000001400019CE                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>  <span class="token comment">; int **</span>
+<span class="token label function">.text:</span>00000001400019D2                 call    _ZN4core3ptr49drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>i32<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17hdd6c2c2dbce9827cE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$i32$GT$$GT$::hdd6c2c2dbce9827c</span>
+<span class="token label function">.text:</span>00000001400019D7                 nop
+<span class="token label function">.text:</span>00000001400019D8                 add     <span class="token register variable">rsp</span>, <span class="token number">50h</span>
+<span class="token label function">.text:</span>00000001400019DC                 pop     <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span>00000001400019DD                 retn
+<span class="token label function">.text:</span>00000001400019DD demo__test_heap endp</code></pre>
+<p>以下的代码，则是一个堆变量进行克隆的例子：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_heap1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> x<span class="token punctuation">.</span><span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>汇编代码如下，首先，对于变量x的赋值并没有任何改变。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>0000000140001A70 demo__test_heap2 proc near              
+<span class="token label function">.text:</span>0000000140001A70                 push    <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span>0000000140001A71                 sub     <span class="token register variable">rsp</span>, <span class="token number">50h</span>
+<span class="token label function">.text:</span>0000000140001A75                 lea     <span class="token register variable">rbp</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">50h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>0000000140001A7A                 mov     qword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">0FFFFFFFFFFFFFFFEh</span>
+<span class="token label function">.text:</span>0000000140001A82                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span>0000000140001A89
+<span class="token label function">.text:</span>0000000140001A89 loc_140001A89:                          <span class="token comment">; DATA XREF: .rdata:000000014001F240↓o</span>
+<span class="token label function">.text:</span>0000000140001A89 <span class="token comment">;   try {                               ; unsigned __int64</span>
+<span class="token label function">.text:</span>0000000140001A89                 mov     <span class="token register variable">edx</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span>0000000140001A8E                 mov     <span class="token register variable">rcx</span>, <span class="token register variable">rdx</span>        <span class="token comment">; unsigned __int64</span>
+<span class="token label function">.text:</span>0000000140001A91                 call    _ZN5alloc5alloc15exchange_malloc17h48a2c7f25fc263d3E <span class="token comment">; alloc::alloc::exchange_malloc::h48a2c7f25fc263d3</span>
+<span class="token label function">.text:</span>0000000140001A96                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>
+<span class="token label function">.text:</span>0000000140001A9A                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span>0000000140001A9C <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>0000000140001A9C
+<span class="token label function">.text:</span>0000000140001A9C loc_140001A9C:                          <span class="token comment">; CODE XREF: demo__test_heap2+2A↑j</span>
+<span class="token label function">.text:</span>0000000140001A9C                 mov     <span class="token register variable">rax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>0000000140001AA0                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">]</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span>0000000140001AA6                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 将堆地址赋值给变量x</span></code></pre>
+<p>接下来，和调用drop一样的传参方式，来调用clone函数。返回值就回是一个新的堆地址，这个堆地址中保存的值也是5，随后将该堆地址赋值给变量y。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>0000000140001AAA loc_140001AAA:                          <span class="token comment">; DATA XREF: .rdata:000000014001F248↓o</span>
+<span class="token label function">.text:</span>0000000140001AAA <span class="token comment">;   try {                               ; int **</span>
+<span class="token label function">.text:</span>0000000140001AAA                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>0000000140001AAE                 call    _ZN69_<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>T<span class="token operator">$</span>C<span class="token operator">$</span>A<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>u20<span class="token operator">$</span>as<span class="token operator">$</span>u20<span class="token operator">$</span>core__clone__Clone<span class="token operator">$</span>GT<span class="token operator">$</span>5clone17h74575b933fcc51ecE <span class="token comment">; _$LT$alloc..boxed..Box$LT$T$C$A$GT$$u20$as$u20$core..clone..Clone$GT$::clone::h74575b933fcc51ec</span>
+<span class="token label function">.text:</span>0000000140001AB3                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>
+<span class="token label function">.text:</span>0000000140001AB7                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span>0000000140001AB9 <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>0000000140001AB9
+<span class="token label function">.text:</span>0000000140001AB9 loc_140001AB9:                          <span class="token comment">; CODE XREF: demo__test_heap2+47↑j</span>
+<span class="token label function">.text:</span>0000000140001AB9                 mov     <span class="token register variable">rax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">30h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>0000000140001ABD                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 将堆地址赋值给变量y</span></code></pre>
+<p>最后，在退出函数的时候，来调用drop分别释放掉变量y和变量x:</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>0000000140001AC1                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>  <span class="token comment">; int **</span>
+<span class="token label function">.text:</span>0000000140001AC5                 call    _ZN4core3ptr49drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>i32<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17hdd6c2c2dbce9827cE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$i32$GT$$GT$::hdd6c2c2dbce9827c</span>
+<span class="token label function">.text:</span>0000000140001AC5 <span class="token comment">;   } // starts at 140001AAA</span>
+<span class="token label function">.text:</span>0000000140001ACA
+<span class="token label function">.text:</span>0000000140001ACA loc_140001ACA:                          <span class="token comment">; DATA XREF: .rdata:000000014001F250↓o</span>
+<span class="token label function">.text:</span>0000000140001ACA                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span>0000000140001ACC <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>0000000140001ACC
+<span class="token label function">.text:</span>0000000140001ACC loc_140001ACC:                          <span class="token comment">; CODE XREF: demo__test_heap2:loc_140001ACA↑j</span>
+<span class="token label function">.text:</span>0000000140001ACC                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>  <span class="token comment">; int **</span>
+<span class="token label function">.text:</span>0000000140001AD0                 call    _ZN4core3ptr49drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>i32<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17hdd6c2c2dbce9827cE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$i32$GT$$GT$::hdd6c2c2dbce9827c</span>
+<span class="token label function">.text:</span>0000000140001AD5                 nop
+<span class="token label function">.text:</span>0000000140001AD6                 add     <span class="token register variable">rsp</span>, <span class="token number">50h</span>
+<span class="token label function">.text:</span>0000000140001ADA                 pop     <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span>0000000140001ADB                 retn
+<span class="token label function">.text:</span>0000000140001ADB <span class="token comment">; } // starts at 140001A70</span>
+<span class="token label function">.text:</span>0000000140001ADB demo__test_heap2 endp</code></pre>
+<p>这里可以通过动态调试看到，对变量x和y赋值完成以后，这两个变量保存的地址是两块不同的堆地址。而这两块不同的堆地址中，保存的数据都是i32类型的5。</p>
+<p><img alt="" src="img/1.png"></p>
+<p>函数的参数和返回值也存在变量移动的特性，对于栈中数据，进行变量移动的表现之前的文章提过了。下面的例子，则是堆中数据进行变量的移动。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_heap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">test</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token keyword">i32</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>test_heap函数的反汇编代码如下，这里对变量x的赋值和前面一样。在调用test函数的时候，函数的第一个参数是申请到的堆变量的地址。此外，test_heap函数执行结束的时候，这里不会调用drop函数来释放堆内存。因为，此时的变量x已经移动到函数test中。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001820</span> demo__test_heap proc near           
+<span class="token label function">.text:</span><span class="token number">0000000140001820</span>                 push    <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001821</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">40h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001825</span>                 lea     <span class="token register variable">rbp</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">40h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>000000014000182A                 mov     qword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">0FFFFFFFFFFFFFFFEh</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001832</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001839</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001839</span> loc_140001839:                          <span class="token comment">; DATA XREF: .rdata:000000014001F020↓o</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001839</span> <span class="token comment">;   try {                               ; unsigned __int64</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001839</span>                 mov     <span class="token register variable">edx</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span>000000014000183E                 mov     <span class="token register variable">rcx</span>, <span class="token register variable">rdx</span>        <span class="token comment">; unsigned __int64</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001841</span>                 call    _ZN5alloc5alloc15exchange_malloc17hbfcefceba03e97e8E <span class="token comment">; alloc::alloc::exchange_malloc::hbfcefceba03e97e8</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001841</span> <span class="token comment">;   } // starts at 140001839</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001846</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001846</span> loc_140001846:                          <span class="token comment">; DATA XREF: .rdata:000000014001F028↓o</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001846</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>
+<span class="token label function">.text:</span>000000014000184A                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span>000000014000184C <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>000000014000184C
+<span class="token label function">.text:</span>000000014000184C loc_14000184C:                          <span class="token comment">; CODE XREF: demo__test_heap+2A↑j</span>
+<span class="token label function">.text:</span>000000014000184C                 mov     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>  <span class="token comment">; int *</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001850</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rcx</span><span class="token operator">]</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001856</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>  <span class="token comment">; 保存变量x的地址</span>
+<span class="token label function">.text:</span>000000014000185A                 call    test_pro__test
+<span class="token label function">.text:</span>000000014000185F                 nop
+<span class="token label function">.text:</span><span class="token number">0000000140001860</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">40h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001864</span>                 pop     <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001865</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001865</span> <span class="token comment">; } // starts at 140001820</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001865</span> demo__test_heap endp</code></pre>
+<p>在test函数中，会将堆变量地址保存起来，然后赋值给变量y。此时，函数结束的时候，会调用drop函数释放堆内存。因为，变量x已经被移动到该函数中，所以该函数退出的时候，该堆变量的生命周期就结束了。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001890</span> <span class="token comment">; void __fastcall demo_pro::test(int *)</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001890</span> demo__test  proc near            
+<span class="token label function">.text:</span><span class="token number">0000000140001890</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001894</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>  <span class="token comment">; 保存堆地址</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001899</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>  <span class="token comment">; 将堆地址赋值给y</span>
+<span class="token label function">.text:</span>000000014000189E                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>  
+<span class="token label function">.text:</span>00000001400018A3                 call    _ZN4core3ptr49drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>i32<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17h83f77475b2c15f5dE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$i32$GT$$GT$::h83f77475b2c15f5d</span>
+<span class="token label function">.text:</span>00000001400018A8                 nop
+<span class="token label function">.text:</span>00000001400018A9                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span>00000001400018AD                 retn
+<span class="token label function">.text:</span>00000001400018AD demo__test  endp</code></pre>
+<p>下面的例子，将堆变量移动到test1函数之后，又将该变量返回到test_heap1函数中：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test_heap1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token function">test1</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">test1</span><span class="token punctuation">(</span>x<span class="token punctuation">:</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token keyword">i32</span><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">-&gt;</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token keyword">i32</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> x<span class="token punctuation">;</span>
+    y
+<span class="token punctuation">}</span></code></pre>
+<p>test_heap1的反汇编代码如下，此时，依然将堆变量地址作为第一个参数调用test1函数。test1函数的返回值，将被赋值给变量y，此时该值就是堆内存地址。然后，在通过变量y来调用drop函数释放内存。这是因为，此时的堆变量又被移动会test_heap1函数，所以该函数结束的时候，堆变量的生命周期就结束了。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span>00000001400018B0 demo__test_heap1 proc near          
+<span class="token label function">.text:</span>00000001400018B0                 push    <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span>00000001400018B1                 sub     <span class="token register variable">rsp</span>, <span class="token number">50h</span>
+<span class="token label function">.text:</span>00000001400018B5                 lea     <span class="token register variable">rbp</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">50h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>00000001400018BA                 mov     qword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">0FFFFFFFFFFFFFFFEh</span>
+<span class="token label function">.text:</span>00000001400018C2                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span>00000001400018C9
+<span class="token label function">.text:</span>00000001400018C9 loc_1400018C9:                          <span class="token comment">; DATA XREF: .rdata:000000014001F08C↓o</span>
+<span class="token label function">.text:</span>00000001400018C9 <span class="token comment">;   try {                               ; unsigned __int64</span>
+<span class="token label function">.text:</span>00000001400018C9                 mov     <span class="token register variable">edx</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span>00000001400018CE                 mov     <span class="token register variable">rcx</span>, <span class="token register variable">rdx</span>        <span class="token comment">; unsigned __int64</span>
+<span class="token label function">.text:</span>00000001400018D1                 call    _ZN5alloc5alloc15exchange_malloc17hbfcefceba03e97e8E <span class="token comment">; alloc::alloc::exchange_malloc::hbfcefceba03e97e8</span>
+<span class="token label function">.text:</span>00000001400018D1 <span class="token comment">;   } // starts at 1400018C9</span>
+<span class="token label function">.text:</span>00000001400018D6
+<span class="token label function">.text:</span>00000001400018D6 loc_1400018D6:                          <span class="token comment">; DATA XREF: .rdata:000000014001F094↓o</span>
+<span class="token label function">.text:</span>00000001400018D6                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>
+<span class="token label function">.text:</span>00000001400018DA                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span>00000001400018DC <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400018DC
+<span class="token label function">.text:</span>00000001400018DC loc_1400018DC:                          
+<span class="token label function">.text:</span>00000001400018DC                 mov     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>  <span class="token comment">; int *</span>
+<span class="token label function">.text:</span><span class="token number">00000001400018E0</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rcx</span><span class="token operator">]</span>, <span class="token number">5</span>
+<span class="token label function">.text:</span><span class="token number">00000001400018E6</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>  <span class="token comment">; 将堆地址赋值给变量x</span>
+<span class="token label function">.text:</span>00000001400018EA                 call    test_pro__test1
+<span class="token label function">.text:</span>00000001400018EF                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 将返回值赋值给变量y</span>
+<span class="token label function">.text:</span>00000001400018F3                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>  <span class="token comment">; int **</span>
+<span class="token label function">.text:</span>00000001400018F7                 call    _ZN4core3ptr49drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>i32<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17h83f77475b2c15f5dE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$i32$GT$$GT$::h83f77475b2c15f5d</span>
+<span class="token label function">.text:</span>00000001400018FC                 nop
+<span class="token label function">.text:</span>00000001400018FD                 add     <span class="token register variable">rsp</span>, <span class="token number">50h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001901</span>                 pop     <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001902</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001902</span> <span class="token comment">; } // starts at 1400018B0</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001902</span> demo__test_heap1 endp</code></pre>
+<p>此时，test1函数仅仅将堆内存地址赋值给变量y，不会再调用drop函数释放内存。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001930</span> demo__test1 proc near              
+<span class="token label function">.text:</span><span class="token number">0000000140001930</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001930</span>                 push    <span class="token register variable">rax</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001931</span>                 mov     <span class="token register variable">rax</span>, <span class="token register variable">rcx</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001934</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">]</span>, <span class="token register variable">rax</span>      <span class="token comment">; 将堆变量赋值给y</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001938</span>                 pop     <span class="token register variable">rcx</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001939</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001939</span> demo__test1 endp</code></pre>
+<p>因此，使用堆变量作为参数和返回值的时候，在二进制层面最大的区别就是，根据堆变量生命周期结束的位置，决定释放该堆变量的时机。</p>
+<h1 class="atx" id="4所有权和函数">4.所有权和函数</h1>
+<p>所有权的三条规则，在将变量作为函数的参数和返回值的时候依然适用。下面是一个简单的例子，由于Test没有实现Copy trait。所以在调用test函数的时候，变量t首先会移动到函数test中，然后在从test函数中作为返回值移动出来。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+    x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">test</span><span class="token punctuation">(</span>t<span class="token punctuation">:</span> <span class="token class-name">Test</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+    t
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> t <span class="token operator">=</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> t1 <span class="token operator">=</span> <span class="token function">test</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 可以使用t1，不能使用t</span>
+<span class="token punctuation">}</span></code></pre>
+<p>在汇编代码中，无论是函数调用还是执行，其实都看不出所有权的作用：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001010</span> <span class="token comment">; void __fastcall demo::main()</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001010</span> demo__main      proc near           
+<span class="token label function">.text:</span><span class="token number">0000000140001010</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001010</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001014</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token number">1</span> <span class="token comment">; 为变量t赋值</span>
+<span class="token label function">.text:</span>000000014000101C                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>, <span class="token number">2</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001024</span>                 mov     <span class="token register variable">ecx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>  <span class="token comment">; demo::Test</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001028</span>                 mov     <span class="token register variable">edx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">2Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>000000014000102C                 call    demo__test
+<span class="token label function">.text:</span><span class="token number">0000000140001031</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; 将返回值赋值给变量t1</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001035</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">edx</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001039</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">000000014000103D</span>                 retn
+<span class="token label function">.text:</span><span class="token number">000000014000103D</span> demo__main      endp</code></pre>
+<pre><code class="fenced-code-block language-rust"><span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001000</span> <span class="token punctuation">;</span> <span class="token namespace">demo<span class="token punctuation">::</span></span><span class="token class-name">Test</span> __fastcall <span class="token namespace">demo<span class="token punctuation">::</span></span><span class="token function">test</span><span class="token punctuation">(</span><span class="token namespace">demo<span class="token punctuation">::</span></span><span class="token class-name">Test</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001000</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001000</span>                 push    rax
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001001</span>                 mov     eax<span class="token punctuation">,</span> ecx
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001003</span>                 mov     <span class="token punctuation">[</span>rsp<span class="token punctuation">]</span><span class="token punctuation">,</span> eax      <span class="token punctuation">;</span> 将变量t保存在栈中
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001006</span>                 mov     <span class="token punctuation">[</span>rsp<span class="token operator">+</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> edx
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000100A                 pop     rcx
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000100B                 retn
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000100B demo__test      endp</code></pre>
+<p>除了普通函数，在成员函数self参数中，所有权机制同样发挥了作用。比如下面的代码，由于get_y函数的参数self不是一个引用。这就导致变量t会移动到get_y函数中，后续对变量t的使用将会导致出错。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+    x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">impl</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+    <span class="token keyword">fn</span> <span class="token function-definition function">get_x</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token keyword">i32</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>x
+    <span class="token punctuation">}</span>
+    <span class="token keyword">fn</span> <span class="token function-definition function">get_y</span><span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token keyword">i32</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>y
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> t <span class="token operator">=</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    t<span class="token punctuation">.</span><span class="token function">get_x</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    t<span class="token punctuation">.</span><span class="token function">get_y</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 不能继续使用t</span>
+<span class="token punctuation">}</span></code></pre>
+<p>调用函数的汇编的汇编代码如下，当调用函数get_x的时候，会将变量t的地址作为第一个参数。而调用get_y函数的时候，则会将变量t中的x和y作为参数。这里可以看出，self和&amp;self参数在函数传参时候是不同的。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001020</span> <span class="token comment">; void __fastcall demo::main()</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001020</span> demo__main      proc near              
+<span class="token label function">.text:</span><span class="token number">0000000140001020</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">28h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001024</span>                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token number">1</span> <span class="token comment">; 为变量t赋值</span>
+<span class="token label function">.text:</span>000000014000102C                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">24h</span><span class="token operator">]</span>, <span class="token number">2</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001034</span>                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">20h</span><span class="token operator">]</span>  <span class="token comment">; rcx=变量t地址</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001039</span>                 call    demo__Test__get_x
+<span class="token label function">.text:</span>000000014000103E                 mov     <span class="token register variable">ecx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">20h</span><span class="token operator">]</span>  <span class="token comment">; demo::Test</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001042</span>                 mov     <span class="token register variable">edx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">24h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001046</span>                 call    demo__Test__get_y
+<span class="token label function">.text:</span>000000014000104B                 nop
+<span class="token label function">.text:</span>000000014000104C                 add     <span class="token register variable">rsp</span>, <span class="token number">28h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001050</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001050</span> demo__main      endp</code></pre>
+<p>get_x函数会从rcx中保存的变量t的地址中，取出t.x的值作为返回值：</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001000</span> <span class="token comment">; int __fastcall demo::Test::get_x()</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001000</span> demo__Test__get_x proc near           
+<span class="token label function">.text:</span><span class="token number">0000000140001000</span>                 push    <span class="token register variable">rax</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001001</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001005</span>                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rcx</span><span class="token operator">]</span>      <span class="token comment">; eax=t.x</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001007</span>                 pop     <span class="token register variable">rcx</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001008</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001008</span> demo__Test__get_x endp</code></pre>
+<p>而get_y函数则会将通过寄存器传递进来的，变量t的值保存在栈中。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001010</span> <span class="token comment">; int __fastcall demo::Test::get_y(demo::Test)</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001010</span> demo__Test__get_y proc near         
+<span class="token label function">.text:</span><span class="token number">0000000140001010</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001010</span>                 push    <span class="token register variable">rax</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001011</span>                 mov     <span class="token register variable">eax</span>, <span class="token register variable">edx</span>        <span class="token comment">; eax=t.y</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001013</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">]</span>, <span class="token register variable">ecx</span>      <span class="token comment">; 保存变量t的值到栈中</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001016</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>000000014000101A                 pop     <span class="token register variable">rcx</span>
+<span class="token label function">.text:</span>000000014000101B                 retn
+<span class="token label function">.text:</span>000000014000101B demo__Test__get_y endp</code></pre>
+<p>下面是在堆变量在函数中移动的例子：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+    x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">test</span><span class="token punctuation">(</span>t<span class="token punctuation">:</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Test</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> t1 <span class="token operator">=</span> t<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> t <span class="token operator">=</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 不能继续使用t</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对应的汇编代码如下，在调用函数的时候，申请的堆内存地址会作为第一个参数来调用test函数。且在main函数中，并没有调用drop函数来释放堆内存。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001690</span> <span class="token punctuation">;</span> void __fastcall <span class="token namespace">demo<span class="token punctuation">::</span></span><span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001690</span> demo__main      proc near               
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001690</span>                 push    rbp
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001691</span>                 sub     rsp<span class="token punctuation">,</span> 50h
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">0000000140001695</span>                 lea     rbp<span class="token punctuation">,</span> <span class="token punctuation">[</span>rsp<span class="token operator">+</span>50h<span class="token punctuation">]</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>000000014000169A                 mov     qword ptr <span class="token punctuation">[</span>rbp<span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 0FFFFFFFFFFFFFFFEh
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016A2                 mov     dword ptr <span class="token punctuation">[</span>rbp<span class="token operator">-</span>20h<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token punctuation">;</span> 保存变量t的值在栈中
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016A9                 mov     dword ptr <span class="token punctuation">[</span>rbp<span class="token operator">-</span>1Ch<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">2</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016B0                 mov     ecx<span class="token punctuation">,</span> <span class="token punctuation">[</span>rbp<span class="token operator">-</span>20h<span class="token punctuation">]</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016B3                 mov     <span class="token punctuation">[</span>rbp<span class="token operator">-</span>30h<span class="token punctuation">]</span><span class="token punctuation">,</span> ecx
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016B6                 mov     eax<span class="token punctuation">,</span> <span class="token punctuation">[</span>rbp<span class="token operator">-</span>1Ch<span class="token punctuation">]</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016B9                 mov     <span class="token punctuation">[</span>rbp<span class="token operator">-</span>2Ch<span class="token punctuation">]</span><span class="token punctuation">,</span> eax
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016BC                 mov     <span class="token punctuation">[</span>rbp<span class="token operator">-</span>10h<span class="token punctuation">]</span><span class="token punctuation">,</span> ecx
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016BF                 mov     <span class="token punctuation">[</span>rbp<span class="token operator">-</span>0Ch<span class="token punctuation">]</span><span class="token punctuation">,</span> eax
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016C2
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016C2 loc_1400016C2<span class="token punctuation">:</span>                          <span class="token punctuation">;</span> <span class="token constant">DATA</span> <span class="token constant">XREF</span><span class="token punctuation">:</span> <span class="token punctuation">.</span>rdata<span class="token punctuation">:</span><span class="token number">000000014001E074</span>↓o
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016C2 <span class="token punctuation">;</span>   <span class="token keyword">try</span> <span class="token punctuation">{</span>                               <span class="token punctuation">;</span> unsigned __int64
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016C2                 mov     ecx<span class="token punctuation">,</span> <span class="token number">8</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016C7                 mov     edx<span class="token punctuation">,</span> <span class="token number">4</span>          <span class="token punctuation">;</span> unsigned __int64
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016CC                 call    _ZN5alloc5alloc15exchange_malloc17h1d20c6f51673579eE <span class="token punctuation">;</span> <span class="token namespace">alloc<span class="token punctuation">::</span>alloc<span class="token punctuation">::</span>exchange_malloc<span class="token punctuation">::</span></span>h1d20c6f51673579e
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016CC <span class="token punctuation">;</span>   <span class="token punctuation">}</span> <span class="token comment">// starts at 1400016C2</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D1
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D1 loc_1400016D1<span class="token punctuation">:</span>                          <span class="token punctuation">;</span> <span class="token constant">DATA</span> <span class="token constant">XREF</span><span class="token punctuation">:</span> <span class="token punctuation">.</span>rdata<span class="token punctuation">:</span>000000014001E07C↓o
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D1                 mov     <span class="token punctuation">[</span>rbp<span class="token operator">-</span>28h<span class="token punctuation">]</span><span class="token punctuation">,</span> rax  <span class="token punctuation">;</span> 保存申请到的堆内存的地址
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D5                 jmp     short $<span class="token operator">+</span><span class="token number">2</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D7 <span class="token punctuation">;</span> <span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D7
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D7 loc_1400016D7<span class="token punctuation">:</span>                          <span class="token punctuation">;</span> <span class="token constant">CODE</span> <span class="token constant">XREF</span><span class="token punctuation">:</span> demo__main<span class="token operator">+</span><span class="token number">45</span>↑j
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016D7                 mov     rcx<span class="token punctuation">,</span> <span class="token punctuation">[</span>rbp<span class="token operator">-</span>28h<span class="token punctuation">]</span>  <span class="token punctuation">;</span> <span class="token namespace">demo<span class="token punctuation">::</span></span><span class="token class-name">Test</span> <span class="token operator">*</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016DB                 mov     eax<span class="token punctuation">,</span> <span class="token punctuation">[</span>rbp<span class="token operator">-</span>2Ch<span class="token punctuation">]</span>  <span class="token punctuation">;</span> eax<span class="token operator">=</span>t<span class="token punctuation">.</span>y
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016DE                 mov     edx<span class="token punctuation">,</span> <span class="token punctuation">[</span>rbp<span class="token operator">-</span>30h<span class="token punctuation">]</span>  <span class="token punctuation">;</span> edx<span class="token operator">=</span>t<span class="token punctuation">.</span>x
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">00000001400016E1</span>                 mov     <span class="token punctuation">[</span>rcx<span class="token punctuation">]</span><span class="token punctuation">,</span> edx      <span class="token punctuation">;</span> 为申请的堆内存赋值
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">00000001400016E3</span>                 mov     <span class="token punctuation">[</span>rcx<span class="token operator">+</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> eax
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span><span class="token number">00000001400016E6</span>                 mov     <span class="token punctuation">[</span>rbp<span class="token operator">-</span>18h<span class="token punctuation">]</span><span class="token punctuation">,</span> rcx  <span class="token punctuation">;</span> 保存申请的堆内存地址
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016EA                 call    demo__test
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016EF                 nop
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016F0                 add     rsp<span class="token punctuation">,</span> 50h
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016F4                 pop     rbp
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016F5                 retn
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016F5 <span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token comment">// starts at 140001690</span>
+<span class="token punctuation">.</span>text<span class="token punctuation">:</span>00000001400016F5 demo__main      endp</code></pre>
+<p>而在test函数内部，则会通过rcx保存的堆内存地址，来调用drop函数释放堆内存。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001670</span> <span class="token comment">; void __fastcall demo::test(demo::Test *)</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001670</span> demo__test      proc near           
+<span class="token label function">.text:</span><span class="token number">0000000140001670</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001670</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001674</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001679</span>                 mov     <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token register variable">rcx</span>
+<span class="token label function">.text:</span>000000014000167E                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">28h</span><span class="token operator">]</span>  <span class="token comment">; demo::Test **</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001683</span>                 call    _ZN4core3ptr56drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>demo__Test<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17h4c038d9f3d5bde7aE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$demo..Test$GT$$GT$::h4c038d9f3d5bde7a</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001688</span>                 nop
+<span class="token label function">.text:</span><span class="token number">0000000140001689</span>                 add     <span class="token register variable">rsp</span>, <span class="token number">38h</span>
+<span class="token label function">.text:</span><span class="token number">000000014000168D</span>                 retn
+<span class="token label function">.text:</span><span class="token number">000000014000168D</span> demo__test      endp</code></pre>
+<p>如果test函数修改成下面这样，将变量t再移动出来。就会发现，调用drop函数的操作是在main函数中完成的，而不是在test函数中完成。</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">fn</span> <span class="token function-definition function">test</span><span class="token punctuation">(</span>t<span class="token punctuation">:</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Test</span><span class="token operator">&gt;</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token class-name">Box</span><span class="token operator">&lt;</span><span class="token class-name">Test</span><span class="token operator">&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> t1 <span class="token operator">=</span> t<span class="token punctuation">;</span>
+    t1
+<span class="token punctuation">}</span></code></pre>
+<p>下面是通过self参数来移动堆变量的例子：</p>
+<pre><code class="fenced-code-block language-rust"><span class="token keyword">struct</span> <span class="token type-definition class-name">Test</span> <span class="token punctuation">{</span>
+    x<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+    y<span class="token punctuation">:</span> <span class="token keyword">i32</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">impl</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+    <span class="token keyword">fn</span> <span class="token function-definition function">get_x</span><span class="token punctuation">(</span><span class="token operator">&amp;</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token keyword">i32</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>x
+    <span class="token punctuation">}</span>
+    <span class="token keyword">fn</span> <span class="token function-definition function">get_y</span><span class="token punctuation">(</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">-&gt;</span> <span class="token keyword">i32</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>y
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">fn</span> <span class="token function-definition function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> t <span class="token operator">=</span> <span class="token class-name">Box</span><span class="token punctuation">::</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token class-name">Test</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> x <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">get_x</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> y <span class="token operator">=</span> t<span class="token punctuation">.</span><span class="token function">get_y</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 不能继续使用t</span>
+<span class="token punctuation">}</span></code></pre>
+<p>函数调用的反汇编如下，调用test_x的时候，传递的是堆内存指针的指针。而调用test_y之前，会先判断堆内存地址最后3位是否为0。如果不为0，则会调用_ZN4core9panicking36panic_misaligned_pointer_dereference17h5099f0e5e95afcafE进行报错。如果为0，才会从堆内存中取出变量的值，作为参数来调用get_y函数。此外，虽然此时变量t已经被移动到函数get_y中。调用drop函数释放堆内存的操作，依然是在main函数中执行的，这是和普通函数不同的地方。</p>
+<pre><code class="fenced-code-block language-nasm"><span class="token label function">.text:</span><span class="token number">0000000140001690</span> <span class="token comment">; void __fastcall demo::main()</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001690</span> demo__main      proc near            
+<span class="token label function">.text:</span><span class="token number">0000000140001690</span>                 push    <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001691</span>                 sub     <span class="token register variable">rsp</span>, <span class="token number">70h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001695</span>                 lea     <span class="token register variable">rbp</span>, <span class="token operator">[</span><span class="token register variable">rsp</span><span class="token operator">+</span><span class="token number">70h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>000000014000169A                 mov     qword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">8</span><span class="token operator">]</span>, <span class="token number">0FFFFFFFFFFFFFFFEh</span>
+<span class="token label function">.text:</span>00000001400016A2                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>, <span class="token number">1</span>
+<span class="token label function">.text:</span>00000001400016A9                 mov     dword ptr <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">1Ch</span><span class="token operator">]</span>, <span class="token number">2</span>
+<span class="token label function">.text:</span>00000001400016B0                 mov     <span class="token register variable">ecx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">20h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>00000001400016B3                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">38h</span><span class="token operator">]</span>, <span class="token register variable">ecx</span>
+<span class="token label function">.text:</span>00000001400016B6                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">1Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>00000001400016B9                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">34h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>00000001400016BC                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">10h</span><span class="token operator">]</span>, <span class="token register variable">ecx</span>
+<span class="token label function">.text:</span>00000001400016BF                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">0Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>00000001400016C2
+<span class="token label function">.text:</span>00000001400016C2 loc_1400016C2:                          <span class="token comment">; DATA XREF: .rdata:000000014001F10C↓o</span>
+<span class="token label function">.text:</span>00000001400016C2 <span class="token comment">;   try {                               ; unsigned __int64</span>
+<span class="token label function">.text:</span>00000001400016C2                 mov     <span class="token register variable">ecx</span>, <span class="token number">8</span>
+<span class="token label function">.text:</span>00000001400016C7                 mov     <span class="token register variable">edx</span>, <span class="token number">4</span>          <span class="token comment">; unsigned __int64</span>
+<span class="token label function">.text:</span>00000001400016CC                 call    _ZN5alloc5alloc15exchange_malloc17h1d20c6f51673579eE <span class="token comment">; alloc::alloc::exchange_malloc::h1d20c6f51673579e</span>
+<span class="token label function">.text:</span>00000001400016D1                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">30h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 保存申请的堆内存地址</span>
+<span class="token label function">.text:</span>00000001400016D5                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>       <span class="token comment">; 为堆内存赋值</span>
+<span class="token label function">.text:</span>00000001400016D7 <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400016D7
+<span class="token label function">.text:</span>00000001400016D7 loc_1400016D7:                          <span class="token comment">; CODE XREF: demo__main+45↑j</span>
+<span class="token label function">.text:</span>00000001400016D7                 mov     <span class="token register variable">rax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">30h</span><span class="token operator">]</span>  <span class="token comment">; 为堆内存赋值</span>
+<span class="token label function">.text:</span>00000001400016DB                 mov     <span class="token register variable">ecx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">34h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>00000001400016DE                 mov     <span class="token register variable">edx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">38h</span><span class="token operator">]</span>
+<span class="token label function">.text:</span><span class="token number">00000001400016E1</span>                 mov     <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">]</span>, <span class="token register variable">edx</span>
+<span class="token label function">.text:</span><span class="token number">00000001400016E3</span>                 mov     <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>, <span class="token register variable">ecx</span>
+<span class="token label function">.text:</span><span class="token number">00000001400016E6</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 保存堆地址</span>
+<span class="token label function">.text:</span>00000001400016EA                 mov     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>  <span class="token comment">; rcx=保存堆内存地址的栈地址</span>
+<span class="token label function">.text:</span>00000001400016EA <span class="token comment">;   } // starts at 1400016C2</span>
+<span class="token label function">.text:</span>00000001400016EE
+<span class="token label function">.text:</span>00000001400016EE loc_1400016EE:                          <span class="token comment">; DATA XREF: .rdata:000000014001F114↓o</span>
+<span class="token label function">.text:</span>00000001400016EE <span class="token comment">;   try {</span>
+<span class="token label function">.text:</span>00000001400016EE                 call    demo__Test__get_x
+<span class="token label function">.text:</span>00000001400016F3                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">3Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>  <span class="token comment">; 为x赋值</span>
+<span class="token label function">.text:</span>00000001400016F6                 jmp     short <span class="token operator">$</span><span class="token operator">+</span><span class="token number">2</span>
+<span class="token label function">.text:</span>00000001400016F8 <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>00000001400016F8
+<span class="token label function">.text:</span>00000001400016F8 loc_1400016F8:                          <span class="token comment">; CODE XREF: demo__main+66↑j</span>
+<span class="token label function">.text:</span>00000001400016F8                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">3Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span>00000001400016FB                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">18h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span>00000001400016FE                 mov     <span class="token register variable">rax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>  <span class="token comment">; rax=堆地址</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001702</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">48h</span><span class="token operator">]</span>, <span class="token register variable">rax</span>  <span class="token comment">; 保存堆地址</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001706</span>                 and     <span class="token register variable">rax</span>, <span class="token number">3</span>
+<span class="token label function">.text:</span>000000014000170A                 cmp     <span class="token register variable">rax</span>, <span class="token number">0</span>
+<span class="token label function">.text:</span>000000014000170E                 setz    <span class="token register variable">al</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001711</span>                 test    <span class="token register variable">al</span>, <span class="token number">1</span>           <span class="token comment">; 判断低3位是否为0</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001713</span>                 jnz     short loc_140001717 <span class="token comment">; 为0则跳转</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001715</span>                 jmp     short loc_14000172A <span class="token comment">; 堆内存地址低3位不为0，则报错</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001717</span> <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001717</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001717</span> loc_140001717:                          <span class="token comment">; CODE XREF: demo__main+83↑j</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001717</span>                 mov     <span class="token register variable">rax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">48h</span><span class="token operator">]</span>  <span class="token comment">; rax=堆地址</span>
+<span class="token label function">.text:</span>000000014000171B                 mov     <span class="token register variable">ecx</span>, <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">]</span>      <span class="token comment">; demo::Test</span>
+<span class="token label function">.text:</span><span class="token number">000000014000171D</span>                 mov     <span class="token register variable">edx</span>, <span class="token operator">[</span><span class="token register variable">rax</span><span class="token operator">+</span><span class="token number">4</span><span class="token operator">]</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001720</span>                 call    demo__Test__get_y
+<span class="token label function">.text:</span><span class="token number">0000000140001720</span> <span class="token comment">;   } // starts at 1400016EE</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001725</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001725</span> loc_140001725:                          <span class="token comment">; DATA XREF: .rdata:000000014001F11C↓o</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001725</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">4Ch</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001728</span>                 jmp     short loc_14000173F
+<span class="token label function">.text:</span>000000014000172A <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>000000014000172A
+<span class="token label function">.text:</span>000000014000172A loc_14000172A:                          <span class="token comment">; CODE XREF: demo__main+85↑j</span>
+<span class="token label function">.text:</span>000000014000172A                 mov     <span class="token register variable">rdx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">48h</span><span class="token operator">]</span>  <span class="token comment">; 堆内存地址低3位不为0，则报错</span>
+<span class="token label function">.text:</span>000000014000172E                 lea     <span class="token register variable">r8</span>, off_14001A490 <span class="token comment">; "src\\main.rs"</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001735</span>                 mov     <span class="token register variable">ecx</span>, <span class="token number">4</span>
+<span class="token label function">.text:</span>000000014000173A                 call    _ZN4core9panicking36panic_misaligned_pointer_dereference17h5099f0e5e95afcafE <span class="token comment">; core::panicking::panic_misaligned_pointer_dereference::h5099f0e5e95afcaf</span>
+<span class="token label function">.text:</span>000000014000173F <span class="token comment">; ---------------------------------------------------------------------------</span>
+<span class="token label function">.text:</span>000000014000173F
+<span class="token label function">.text:</span>000000014000173F loc_14000173F:                          <span class="token comment">; CODE XREF: demo__main+98↑j</span>
+<span class="token label function">.text:</span>000000014000173F                 mov     <span class="token register variable">eax</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">4Ch</span><span class="token operator">]</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001742</span>                 mov     <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">14h</span><span class="token operator">]</span>, <span class="token register variable">eax</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001745</span>                 lea     <span class="token register variable">rcx</span>, <span class="token operator">[</span><span class="token register variable">rbp</span><span class="token operator">-</span><span class="token number">28h</span><span class="token operator">]</span>  <span class="token comment">; 释放堆内存</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001749</span>                 call    _ZN4core3ptr56drop_in_place<span class="token operator">$</span>LT<span class="token operator">$</span>alloc__boxed__Box<span class="token operator">$</span>LT<span class="token operator">$</span>demo__Test<span class="token operator">$</span>GT<span class="token operator">$</span><span class="token operator">$</span>GT<span class="token operator">$</span>17h4c038d9f3d5bde7aE <span class="token comment">; core::ptr::drop_in_place$LT$alloc..boxed..Box$LT$demo..Test$GT$$GT$::h4c038d9f3d5bde7a</span>
+<span class="token label function">.text:</span>000000014000174E                 nop
+<span class="token label function">.text:</span>000000014000174F                 add     <span class="token register variable">rsp</span>, <span class="token number">70h</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001753</span>                 pop     <span class="token register variable">rbp</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001754</span>                 retn
+<span class="token label function">.text:</span><span class="token number">0000000140001754</span> <span class="token comment">; } // starts at 140001690</span>
+<span class="token label function">.text:</span><span class="token number">0000000140001754</span> demo__main      endp</code></pre>
+<p>至于get_x和get_y函数，没有什么特别的地方，这里就不放出来了。</p>
+</article>
+</body>
+</html>
